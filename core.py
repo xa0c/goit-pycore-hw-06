@@ -42,7 +42,7 @@ class Record:
         self.phones = []
 
     def __str__(self):
-        return f"Contact name: {self.name}, phones: {"; ".join(p.value for p in self.phones)}"
+        return f"Contact name: {self.name}, phones: {'; '.join(p.value for p in self.phones)}"
 
     def add_phone(self, value: str):
         """Raises InvalidPhoneFormatError for invalid phone format"""
